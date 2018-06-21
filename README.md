@@ -10,10 +10,12 @@ Server side programming : Java (JSP,Servlet)
 Client side programming : HTML,CSS,JavaScript
 Database programming : MySQL
 
-	⦁	Java is used because it is object oriented , robust and platform independent language. It provides better performance, memory 			management through automatic garbage collection.
-	⦁	JSP is faster and allows embadding code into HTML pages for many programming language such as java, javascript. It can use 				custom tags and let us separate the markup language code from the programming language code.
-	⦁	JavaScript is an incredibly expressive and powerful language and easy to learn.
-	⦁	MySQL is a free-to-use, open-source database that facilitates effective management of databases .It is a stable, reliable and 			powerful solution with good performance.
+Technologies used in this web application provides scalability, performance, works efficiently with concurrent users.
+
+Java is used because it is object oriented , robust and platform independent language. It provides better performance, memory 		management through automatic garbage collection.
+JSP is faster and allows embadding code into HTML pages for many programming language such as java, javascript. It can use 		custom tags and let us separate the markup language code from the programming language code.
+JavaScript is an incredibly expressive and powerful language and easy to learn.
+MySQL is a free-to-use, open-source database that facilitates effective management of databases .It is a stable, reliable and 		powerful solution with good performance.
 	
 # Functionality of the application :
 1. User can check the current weather condition for any city along with next 5 day forecast. Weather attributes like Temperature, Humidity & Wind Speed are surfaced.
@@ -43,6 +45,11 @@ How to deploy:
 	⦁Download folder "WeatherApplication/WebContent" from github and place its contents in newly created "WeatherApplication" folder.
 	⦁Restart tomcat server and run application using following URL
 		http://localhost:8080/WeatherApplication/
+	
+** All the functionalities provided in the app are based on the free API provided by the openweathermap.org. 
+Functionalities like "hourly weather forecast","history weather","daily forecast after 5 days" require paid APIs from opeweathermap.org. 
+Also, for the next 5 days forecast, forecast is provided by opeweathermap.or in interval of 3 hours till 5 days.
+My weathwer app calculates daily 5 days forecast by averaging out the measurements received at 3 hours interval for each day.
 
 
 
